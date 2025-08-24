@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
+import fork from '../../assets/fork.svg';
 
 export default function Navbar() {
-  return (
-    <nav className="flex justify-between items-center p-4 bg-gray-100 shadow">
-      <h1 className="text-xl font-bold">🍽️ Food to Future</h1>
-      <div className="space-x-6">
-        <Link to="/">How it Works</Link>
-        <Link to="/restaurants">Participating Restaurants</Link>
-        <Link to="/enroll">Enroll in School Programs</Link>
-        <Link to="/contact">Contact Us</Link>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className="flex justify-between items-center p-4 bg-gray-400 text-white shadow">
+            {/* Logo + Title in same line */}
+            <div className="flex items-center space-x-2">
+                <img src={fork} alt="logo" className="h-8 w-8 opacity-100" />
+                <h1 className="text-xl font-bold">Food to Future</h1>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="space-x-6">
+                <ul className="flex space-x-6">
+                    <li><Link to="/">How it Works</Link></li>
+                    <li><Link to="/restaurants">Participating Restaurants</Link></li>
+                    <li><Link to="/enroll">Enroll in School Programs</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
+                </ul>
+
+            </div>
+        </nav>
+    );
 }
