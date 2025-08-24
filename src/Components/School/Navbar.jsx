@@ -17,6 +17,7 @@ export default function Navbar() {
                     <li><Link to="/Restaurants">Participating Restaurants</Link></li>
                     <li><Link to="/EnrollProgram">Enroll in School Programs</Link></li>
                     <li><Link to="/Contact">Contact Us</Link></li>
+                    <li><Link to="/NGO">NGOs Connected</Link></li>
                 </ul>
 
             </div>

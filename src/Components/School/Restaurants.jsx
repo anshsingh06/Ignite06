@@ -1,3 +1,5 @@
+import map from '../../assets/map.jpg';
+
 export default function Restaurants() {
   return (
     <div className="p-6">
@@ -7,8 +9,8 @@ export default function Restaurants() {
         <li>🥗 Green Leaf Bistro – provides healthy meals and helps distribute donated food.</li>
         <li>🍞 Bread & Butter – dedicated to sustainability, donating surplus bread to local shelters.</li>
       </ul>
-      <div className="h-64 bg-gray-200 flex items-center justify-center">
-        🗺️ Map View
+      <div>
+        <img src={map} alt="Map showing restaurant locations" className="w-250 rounded shadow h-80" />
       </div>
     </div>
   );

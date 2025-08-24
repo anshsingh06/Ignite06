@@ -8,6 +8,7 @@ export default function Navbar() {
         <Link to="/NGO">Home</Link>
         <Link to="/NGO/programs">Programs</Link>
         <Link to="/NGO/contact">Contact</Link>
+        <Link to="/">Schools Enrolled</Link>
       </div>
     </nav>
   );
