@@ -1,4 +1,5 @@
 import React from 'react'
+import pieChart from '../../assets/pieChart.png';
 
 const HowItWorks = () => {
     return (
@@ -20,6 +21,7 @@ const HowItWorks = () => {
                 </section>
 
                 <section className="grid grid-cols-2 gap-6 mb-8">
+                    
                     <div className="h-40 bg-gray-200 flex items-center justify-center">📊 Bar Chart</div>
                     <div className="h-40 bg-gray-200 flex items-center justify-center">🥧 Pie Chart</div>
                 </section>

@@ -9,6 +9,11 @@ import HowItWorks from "./Components/School/HowItWorks";
 import EnrollProgram from "./Components/School/EnrollProgram";
 import Restaurants from './Components/School/Restaurants'
 import Contact from "./Components/School/Contact";
+import NGONavbar from "./Components/NGO/Navbar";
+import NGOFooter from "./Components/NGO/Footer";
+import Programs from "./Components/NGO/Programs";
+import NGOContact from "./Components/NGO/Contact";
+import Home from "./Components/NGO/Home";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +36,18 @@ function App() {
     {
       path:"/Contact",
       element:<><Navbar/><Contact/><Footer/></>
+    },
+    {
+      path: "/NGO",
+      element: <><NGONavbar/><Home/><NGOFooter/></>
+    },
+    {
+      path: "/NGO/Contact",
+      element: <><NGONavbar/><NGOContact/><NGOFooter/></>
+    },
+    {
+      path: "/NGO/Programs",
+      element: <><NGONavbar/><Programs/><NGOFooter/></>
     },
   ])
    return (
