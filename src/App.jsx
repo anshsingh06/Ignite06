@@ -7,21 +7,20 @@ import Navbar from './Components/School/Navbar'
 import Footer from "./Components/School/Footer";
 import HowItWorks from "./Components/School/HowItWorks";
 import EnrollProgram from "./Components/School/EnrollProgram";
-import Restaurants from "./Components/School/Restaurants";
 
 function App() {
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<><Navbar/><HowItWorks/></>
+      element:<><Navbar/><HowItWorks/><Footer/></>
     },
     {
       path:"/HowItWorks",
-      element:<><Navbar/><HowItWorks/></>
+      element:<><Navbar/><HowItWorks/><Footer/></>
     },
     {
       path:"/EnrollProgram",
-      element:<><Navbar/><EnrollProgram/></>
+      element:<><Navbar/><EnrollProgram/><Footer/></>
     },
   ])
    return (
