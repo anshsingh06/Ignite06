@@ -1,4 +1,6 @@
-export default function EnrollProgram() {
+import React from 'react'
+
+const EnrollProgram = () => {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-4">Enroll in School Programs</h2>
@@ -35,5 +37,7 @@ export default function EnrollProgram() {
         <button type="submit" className="bg-green-500 text-white p-2 rounded">Submit Application</button>
       </form>
     </div>
-  );
+  )
 }
+
+export default EnrollProgram

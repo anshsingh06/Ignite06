@@ -14,9 +14,9 @@ export default function Navbar() {
             <div className="space-x-6">
                 <ul className="flex space-x-6">
                     <li><Link to="/">How it Works</Link></li>
-                    <li><Link to="/restaurants">Participating Restaurants</Link></li>
-                    <li><Link to="/enroll">Enroll in School Programs</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/Restaurants">Participating Restaurants</Link></li>
+                    <li><Link to="/EnrollProgram">Enroll in School Programs</Link></li>
+                    <li><Link to="/Contact">Contact Us</Link></li>
                 </ul>
 
             </div>
